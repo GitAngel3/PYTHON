@@ -16,5 +16,13 @@ b=20
 c=10.25
 total_vol=a+b+c
 print('total volume=',total_vol)
+e=int(total_vol)
+print('total volume as integer=',e)
+f=str(total_vol)
+print('total volume as string='+f)
 
+import random
+
+print('Additional bonus=',random.randrange(5, 10))
+print('Final total volume=',total_vol+random.randrange(5, 10))
 
