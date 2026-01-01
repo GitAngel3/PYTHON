@@ -11,9 +11,10 @@
 #Convert the total volume to a string and print it with a message.
 #Add a random number between 5 and 10 (representing additional bonus liters) and print the final total
 
-a= "apple"=15.5
-b="orange"=20
-c="grape"=10.25
+a=15.5
+b=20
+c=10.25
 total_vol=a+b+c
+print('total volume=',total_vol)
 
 
