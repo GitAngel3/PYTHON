@@ -33,4 +33,10 @@ is_true_login=is_logged_in is True
 access_result = is_logged_in or is_subscribed and False
 print('is_logged_in=',is_logged_in)
 print('is_subscribed=',is_subscribed)
-
+print('credits_valid',credits_valid)
+print('bonus_eligible',bonus_eligible)
+print('user_credits',user_credits)
+print(' power_result', power_result)
+print('full_access',full_access)
+print('is_true_login',is_true_login)
+print('access_result',access_result)
