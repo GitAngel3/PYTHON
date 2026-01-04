@@ -12,3 +12,7 @@ Make sure the output uses newline (\n) and tab (\t) for readability.
 Display the entire receipt in uppercase.
 
 """
+# work for a bookstore that generates receipts for customers
+receipt = "BOOKSTORE RECEIPT header"
+item1 = "Book Title: {} - ₹{}"
+item2 = "Book Title: {} - ₹{}"

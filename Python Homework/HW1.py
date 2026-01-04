@@ -15,3 +15,10 @@ Show the total bill as an integer and also as a string.
 Convert the float values where needed using explicit conversion.
 Use random number generation to add a random ?5–?10 delivery charge.
 Show the final bill amount including delivery charge."""
+
+Rice=45 
+Sugar=40 
+Oil=130 
+Q1=3
+Q2=2.5
+Q3=1.8

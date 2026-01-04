@@ -19,7 +19,7 @@ print('total volume=',total_vol)
 e=int(total_vol)
 print('total volume as integer=',e)
 f=str(total_vol)
-print('total volume as string='+f)
+print('total volume as string is'+f)
 
 import random
 
