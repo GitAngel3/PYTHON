@@ -52,6 +52,7 @@ def main():
     for item in inventory:
         show_item(item)
 
+
    
     total_items = count_items(inventory)
     print(f"\nTotal number of items in stock: {total_items}")
