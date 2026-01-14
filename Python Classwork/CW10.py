@@ -37,8 +37,8 @@ class Vendor(User):
         return "Vendor"
 
 
-user1 = Customer("Amit", 2020)
-user2 = Vendor("Riya", 2018)
+user1 = Customer("Reshma", 2008)
+user2 = Vendor("Anu", 2020)
 
 user1.display_info()
 user2.display_info()
