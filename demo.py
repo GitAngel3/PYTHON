@@ -1,30 +1,24 @@
 
 
-a = input("Enter a number:")
-if(int(a)%2 == 0):
-	print("The number is even")
+
+# Mini Library System
+import re
+
+pattern = r'^[A-Za-z ]+$'
+
+try:
+    title = input("Enter a book title: ")
+    
+    # validate title using regex
+    if not re.fullmatch(pattern, title):
+        raise ValueError("Book title must contain only alphabets and spaces")
+    
+    year = int(input("Enter the publication year: "))
+
+except ValueError as e:
+    print("Error:", e)
+
 else:
- 
- #qn 8
- 
- class Person:
-  def __init__(self, name, age):
-    self.name = name
-    self.age = age
-  def show_details():
-      
-      obj1 = Person("string", "integer")
-      print(obj1.name)
-      print(obj1.age)
-
-class Employee(Person):
-  def __init__(self, name, age,employee_id):
-    self.name = name
-    self.age = age
-  def show_details():
-      
-      obj1 = Person("string", "integer")
-      print(obj1.name)
-      print(obj1.age)
-
-  def working_hours (float):
+    print("Title name accepted")
+    print("Book Title:", title)
+    print("Publication Year:", year)
