@@ -22,3 +22,15 @@ Oil=130
 Q1=3
 Q2=2.5
 Q3=1.8
+price_of_rice= float(Rice*Q1)
+price_of_sugar=float(Sugar*Q2)
+price_of_oil=float(Oil*Q3)
+
+final_total_bill=price_of_rice+price_of_sugar+price_of_oil
+
+#show the total bill as an integer and also as a string.
+print('price_of_rice=',price_of_rice)
+print('price of sugar=',price_of_sugar)
+print('price of oil=',price_of_oil)
+print('final bill=',int(final_total_bill))
+print('final bill=',str(final_total_bill))
