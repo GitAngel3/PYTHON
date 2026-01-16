@@ -13,13 +13,13 @@ year_pattern = r'^(19|20)\d{2}$'
 try:
     title = input("Enter a book title: ")
 
-    # validate title using regex
+    
     if not re.fullmatch(title_pattern, title):
         raise ValueError("Book title must contain only alphabets and spaces")
 
     year = input("Enter the publication year: ")
 
-    # validate year using regex (must be string)
+   
     if not re.fullmatch(year_pattern, year):
         raise ValueError("Year must be a 4-digit number starting with 19 or 20")
 
