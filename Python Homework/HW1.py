@@ -34,3 +34,9 @@ print('price of sugar=',price_of_sugar)
 print('price of oil=',price_of_oil)
 print('final bill=',int(final_total_bill))
 print('final bill=',str(final_total_bill))
+
+import random
+delivery_charge=random.randrange(5,10)
+print('delivery charge=',delivery_charge)
+final_bill = final_total_bill + delivery_charge
+print('final bill amount including delivery charge=',final_bill)
