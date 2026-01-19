@@ -11,24 +11,28 @@ After saving the new names, read and display the updated list of all student nam
 
 
 
-n= int(input('Enter the count of student names you want to add:'))
+
+filename = "students.txt"
+
+try:
+    with open(filename, "r") as file:
+        existing_names = file.read().strip()
+        if existing_names:
+            print("Existing student names:")
+            print(existing_names)
+        else:
+            print("The file exists but is empty.")
+except FileNotFoundError:
+    print("No existing file found. A new file will be created.")
 
 
-for i in range(n):
-    names = []
-    name = input(f"Enter names {i+1}: ")
-    names.append(name)
+n = int(input("\nHow many student names do you want to add? "))
 
-print("List of names:", names)
+with open(filename, "a") as file:
+    for i in range(n):
+        name = input(f"Enter student name {i + 1}: ")
+        file.write(name + "\n")
 
-
-
-
-f = open("students.txt", "a")
-f.write(item)
-f.close()
-f=open("items.txt", "r")
-print("\nUpdated list of stationery items:")
-print(f.read())
-
-
+print("\nUpdated list of student names:")
+with open(filename, "r") as file:
+    print(file.read())
