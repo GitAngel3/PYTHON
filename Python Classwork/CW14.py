@@ -5,6 +5,8 @@ Randomly choose one name from the final list to play a game.
 Reverse the selected name and display it.
 Also, print the total number of unique names and round the square root of that number to the nearest whole number.
 """
+
+import random
 names=input('enter a list of names of invited guests with coma-seperated ').split(",")
 
 
@@ -19,7 +21,7 @@ for x in names:
 print ("The list after removing duplicates : " + str(result)) 
 
 
-import random
+
 
 
 sampling = random(names)
