@@ -12,10 +12,22 @@ Display the final message:
 "The course description is {} characters long and has {} words." using the format() method."""
 
 
-python="""Python is a popular, high-level, general-purpose programming 
+python="""  Python is a popular, high-level, general-purpose programming 
 language known for its simple, English-like syntax and emphasis on code readability.
-It is dynamically typed, supports multiple programming paradigms, 
-and has a vast collection of libraries and frameworks, 
+Python is dynamically typed, supports multiple programming paradigms, 
+and Python has a vast collection of libraries and frameworks, 
 making it versatile for a wide range of applications. """
 
 length=len(python)
+print("\nLength of the paragraph:", length)
+print(python[0],python[321])
+
+print('\nshort preview:',python[0:51])
+print('\n',python.replace('Python','PYTHON'))
+
+print('\n',python.lower())
+
+print('\n',python.strip())
+
+list=python.split()
+print('\n',list)
