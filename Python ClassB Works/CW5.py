@@ -12,22 +12,38 @@ Using dictionary comprehension, create a new dictionary where course names are u
 
 
 """
-Python = set(("Anu", "Jhansi","kavya", "Sreedevi","Helen"))
-Data_Science = set(("John", "Manu","Jhansi", "Kumar","kavya"))
-print(Python & Data_Science)
-print(Python-Data_Science)
-print(Python|Data_Science)
+# 1. Create sets for each course
+python_students = {"Asha", "Ravi", "Neha"}
+data_science_students = {"Neha", "Karan", "Pooja"}
+
+# 2. Add a new student to Python
+python_students.add("Arjun")
+
+# 3. Remove one student from Data Science
+data_science_students.remove("Pooja")
+
+# 4. Students enrolled in BOTH courses
+both_courses = python_students & data_science_students
+print("Students in both courses:", both_courses)
+
+# 5. Students only in Python (not in Data Science)
+only_python = python_students - data_science_students
+print("Only Python students:", only_python)
+
+# 6. All students in either course (no duplicates)
+all_students = python_students | data_science_students
+print("All students:", all_students)
+
+# 7. Create dictionary with course names and student count
 course_counts = {
-    "Python": len(Python),
-    "Data_science": len(Data_Science)
+    "Python": len(python_students),
+    "Data Science": len(data_science_students)
 }
-for x, y in course_counts.items():
-  print(x,':',y)
-#Using dictionary comprehension, create a new dictionary where course names are unchanged, but values are doubled (to simulate expected growth)
 
-double_length = {course_counts: 2*len()}
-print(double_length)
+# 8. Print course details using a loop
+for course, count in course_counts.items():
+    print(f"Course: {course}, Students: {count}")
 
-
-
-
+# 9. Dictionary comprehension to double values
+expected_growth = {course: count * 2 for course, count in course_counts.items()}
+print("Expected growth:", expected_growth)
