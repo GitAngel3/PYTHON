@@ -1,0 +1,13 @@
+def add_fn(a,b):
+    sum=a+b
+    return sum
+
+def mul_fn(sum):
+    x = sum * 10
+    return x
+
+def print_fn(x):
+    print('product of 10 and (sum of a and b) is:', x)
+
+
+print_fn(x)
