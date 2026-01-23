@@ -4,22 +4,34 @@
 # subtraction, division and multiplication.
 
 class Calculator:
-    def __init__(self):
-        self.a = int(input("Enter 1st number: "))
-        self.b = int(input("Enter 2nd number: "))
+    def add(self, a, b):
+        return a + b
 
-    def calculate(self):
-        add = self.a + self.b
-        sub = self.a - self.b
-        mul = self.a * self.b
-        div = self.a / self.b
+    def subtract(self, a, b):
+        return a - b
 
-        print(f"{self.a} + {self.b} = {add}")
-        print(f"{self.a} - {self.b} = {sub}")
-        print(f"{self.a} * {self.b} = {mul}")
-        print(f"{self.a} / {self.b} = {div}")
+    def multiply(self, a, b):
+        return a * b
 
-
+    def divide(self, a, b):
+        if b == 0:
+            return "Error! Division by zero."
+        return a / b
 
 calc = Calculator()
-calc.calculate()
+
+a = float(input("Enter first number: "))
+operator = input("Enter operator (+, -, *, /): ")
+b = float(input("Enter second number: "))
+
+
+if operator == "+":
+    print("Result:", calc.add(a, b))
+elif operator == "-":
+    print("Result:", calc.subtract(a, b))
+elif operator == "*":
+    print("Result:", calc.multiply(a, b))
+elif operator == "/":
+    print("Result:", calc.divide(a, b))
+else:
+    print("Invalid operator!")
