@@ -1,7 +1,4 @@
-#Create a calculator program using OOPS.
-# Make sure you create a class Calculator and 
-# then use its object to access the calculator operations such as addition, 
-# subtraction, division and multiplication.
+
 
 class Calculator:
     def __init__(self):
@@ -20,6 +17,6 @@ class Calculator:
         print(f"{self.a} / {self.b} = {div}")
 
 
-
+# create object
 calc = Calculator()
 calc.calculate()
